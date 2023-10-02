@@ -14,10 +14,12 @@ function addMessage(content) {
 
 const functions = {
   add_todo: (parameters) => {
+    console.log(chalk.dim(`  add_todo("${parameters.description}")`))
     addLine(parameters.description);
     return `"${parameters.description}" added to the list`;
   },
   remove_todo:  (parameters) => {
+    console.log(chalk.dim(`  remove_todo(${parameters.index})`))    
     removeLine(parameters.index);
     return `item removed from the list`;
   }
