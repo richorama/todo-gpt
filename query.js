@@ -11,7 +11,7 @@ export default async function query(messages) {
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
-      "api-key": process.env.OPEN_AI_KEY,
+      "api-key": process.env.OPEN_AI_KEY.trim(),
     },
     body: JSON.stringify({
       messages,
