@@ -10,7 +10,6 @@
         "vscode-icons-team.vscode-icons",
         "visualstudioexptteam.vscodeintellicode"
     ],
-    "dockerFile": "Dockerfile",
     "settings": {
         "terminal.integrated.shell.linux": "/usr/bin/zsh",
         "files.exclude": {
